@@ -33,6 +33,15 @@ Please follow [Hugoplate Github Page](https://github.com/zeon-studio/hugoplate/)
 - Any File included here is a theme file customised according to our need.
 
 
+## INSTALLATION
+
+```
+git clone https://github.com/ghimireaacs/xplorers.git
+cd xplorers
+git submodule update --init --recursive
+npm install
+hugo server
+```
 
 <h3 align="center">This is start of Something Great.</h3>
 
