@@ -27,6 +27,7 @@ Please follow [Hugoplate Github Page](https://github.com/zeon-studio/hugoplate/)
 ### Modified Hugoplate Theme
 
 > 💡 Use Exact file structure from /themes/hugoplate folder to customize the theme
+
 > 🚫 Do NOT modify Theme File
 
 - Any File included here is a theme file customised according to our need.
