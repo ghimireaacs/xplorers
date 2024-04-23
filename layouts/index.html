@@ -1,0 +1,41 @@
+{{ define "main" }}
+  <!-- Banner -->
+  {{ with .Params.banner }}
+    <section class="section pt-14 h-screen flex items-center justify-center">
+      <div class="container">
+        <div class="row justify-center">
+          <div class="lg:col-7 md:col-9 mb-8 text-center">
+            <h1 class="mb-4 text-h3 lg:text-h1">
+              {{ .title | markdownify }}
+            </h1>
+            <p class="mb-8">
+              {{ .content | markdownify }}
+            </p>
+            {{ with .button }}
+              {{ if .enable }}
+                <a
+                  class="btn btn-primary"
+                  href="{{ .link | absURL }}"
+                  {{ if strings.HasPrefix .link `http` }}
+                    target="_blank" rel="noopener"
+                  {{ end }}>
+                  {{ .label }}
+                  <i class="fa fa-arrow-right pl-2"></i>
+                </a>
+              {{ end }}
+            {{ end }}
+          </div>
+          <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full max-w-lg px-4">
+            <!-- Light mode image -->
+            {{ partial "image" (dict "Src" .lightImage "Alt" "Banner image" "Loading" "eager" "Class" "mx-auto dark:hidden" "DisplayXL" "800x" ) }}
+            
+            <!-- Dark mode image -->
+            {{ partial "image" (dict "Src" .darkImage "Alt" "Banner image" "Loading" "eager" "Class" "mx-auto hidden dark:block" "DisplayXL" "800x" ) }}
+          </div>
+          
+        </div>
+      </div>
+    </section>
+  {{ end }}
+  <!-- /Banner -->
+{{ end }}

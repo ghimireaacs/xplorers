@@ -1,0 +1,52 @@
+############# English navigation ##############
+
+# main menu
+[[main]]
+name = "Home"
+pageRef = "/"
+weight = 1
+
+[[main]]
+name = "About"
+pageRef = "/about"
+weight = 2
+
+[[main]]
+name = "Blog"
+pageRef = "/blog"
+weight = 3
+
+[[main]]
+name = "Authors"
+pageRef = "/authors"
+weight = 4
+
+
+# NESTED MENU (MODAL)
+# [[main]]
+# weight = 5
+# name = "Pages"
+
+# [[main]]
+# parent = "Pages"
+# name = "404 Page"
+# pageRef = "/404"
+
+
+# footer menu
+[[footer]]
+name = "About"
+pageRef = "/about"
+weight = 1
+
+[[footer]]
+name = "Contact"
+pageRef = "/contact"
+weight = 2
+
+
+
+[[footer]]
+name = "Categories"
+pageRef = "/categories"
+weight = 3
