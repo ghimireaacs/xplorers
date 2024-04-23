@@ -7,3 +7,31 @@
 
 
 Please follow [Hugoplate Github Page](https://github.com/zeon-studio/hugoplate/) for Instructions.
+---
+
+### Required Files if decided to change theme
+
+- /assets : Contains all assets like JS, CSS and Images
+- /content: Has all added Blogs and Authors
+
+### Modified Files/Folders
+
+- /archetypes/* : Premade templates to create blog, author or any content.
+
+- /config : Contains Parameters and Menu Items
+  - /_default/menus.en.toml : Modified Menu Items
+  - /_default/params.toml : Essential Website Parameters Favicons, Logo, url etc.
+
+- /data : Contains Theme and Social Settings
+
+### Modified Hugoplate Theme
+
+> 💡 Use Exact file structure from /themes/hugoplate folder to customize the theme
+> 🚫 Do NOT modify Theme File
+
+- Any File included here is a theme file customised according to our need.
+
+
+
+<h3 align="center">This is start of Something Great.</h3>
+
